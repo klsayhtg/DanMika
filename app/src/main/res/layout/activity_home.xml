@@ -1,7 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="나아느은배가고프드아아아"
+        android:textSize="15dp"
+        android:textColor="@color/black"/>
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/myProfileIV"
+        android:layout_width="@dimen/profile_size"
+        android:layout_height="@dimen/profile_size"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="@dimen/profile_border_width"
+        app:civ_shadow="true"
+        app:civ_shadow_radius="10"
+        app:civ_shadow_color="@color/gray"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/profileBT"
+            android:layout_width="@dimen/home_button_width"
+            android:layout_height="@dimen/home_button_height"
+            android:layout_marginRight="20dp"
+            android:text="애들 프로필"
+            android:textSize="@dimen/home_button_font_size"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/mapBT"
+            android:layout_width="@dimen/home_button_width"
+            android:layout_height="@dimen/home_button_height"
+            android:text="학원 지도"
+            android:textSize="@dimen/home_button_font_size"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/gachaBT"
+            android:layout_width="@dimen/home_button_width"
+            android:layout_height="@dimen/home_button_height"
+            android:layout_marginRight="20dp"
+            android:text="☆가★챠☆"
+            android:textSize="@dimen/home_button_font_size"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/snsBT"
+            android:layout_width="@dimen/home_button_width"
+            android:layout_height="@dimen/home_button_height"
+            android:text="SNS"
+            android:textSize="@dimen/home_button_font_size"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/newsBT"
+            android:layout_width="@dimen/home_button_width"
+            android:layout_height="@dimen/home_button_height"
+            android:layout_marginRight="20dp"
+            android:text="신문?"
+            android:textSize="@dimen/home_button_font_size"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/monoFileBT"
+            android:layout_width="@dimen/home_button_width"
+            android:layout_height="@dimen/home_button_height"
+            android:text="모노쿠마 파일"
+            android:textSize="@dimen/home_button_font_size"
+            android:textColor="@color/black"/>
+    </LinearLayout>
 </LinearLayout>
